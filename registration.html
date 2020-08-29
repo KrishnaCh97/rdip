@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<link rel="stylesheet" type="text/css" href="week1.css">
+	<script type="text/javascript">
+		function validateForm(){
+			var one = document.getElementById("reason1").checked;
+			var two = document.getElementById("reason2").checked;
+			var three = document.getElementById("reason3").checked;
+			if((one==false)&&(two==false)&&(three==false)){
+				alert("Please check at least one reason");
+				return false;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+<a href="https://www.iiit.ac.in/"><img src="iiit-new.png"></a>
+<a id="link" href="https://serc.iiit.ac.in/rdip">RDIP</a><br><br><br><br>
+<ul>
+	<li><a href="homepage.html"> Home </a></li>
+	<li><a href="registration.html"> Registration Form </a></li>
+
+</ul>
+
+<form action="details.html" name="myform" method="get">
+	<div class="leftcont">
+		<label for="fname">First name:</label><br><br>
+
+<label>E-mail:</label><br><br>
+
+<label>Phone No:</label>
+<br><br>
+	<label>Gender:</label> 
+<br><br>
+		<label for="reason">Reason For RDIP:</label>
+	<br><br>
+
+		<label for="college">College:</label>
+	<br><br>
+<input type="checkbox" name="agreement" required><br><br>
+<input type="submit" name="submit" onclick="return validateForm()">
+</div>
+	<div class="container1">
+	
+	<input type="text" name="fname" id="fname" required><br><br>
+	
+	<input type="email" name="mail" id="mail" required><br><br>
+	
+	<input type="tel" name="phone" id="phone" required><br><br>
+
+	<input type="radio" name="gender" id="male" value="male" required><label for="male">Male</label>
+	<input type="radio" name="gender" id="female" value="female" required><label for="female">Female</label>
+	<input type="radio" name="gender" id="others" value="others" required><label for="others">Other</label><br><br>
+
+	<input type="checkbox" name="reason1" id="reason1"><label for="reason1">HTML</label>
+	<input type="checkbox" name="reason2" id="reason2"><label for="reason2">CSS</label>
+	<input type="checkbox" name="reason3" id="reason3"><label for="reason3">JavaScript</label><br><br>
+	<input type="text" name="college" id="college" required><br><br>
+	I declare above details given by me are true.<br><br>
+	&emsp;<input type="reset" name="reset">
+	</div>
+</form>
+</body
+
